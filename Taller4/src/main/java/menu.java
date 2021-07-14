@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-public class menu {
-   import java.util.Scanner;
 
-    public class Menu {
+    public class menu {
         public static void iniciarPrograma() {
             boolean a;
             do {
@@ -13,16 +11,13 @@ public class menu {
 
         }
         public static void menuPrincipal() {
-            System.out.println("**********************************************************");
-            System.out.println("*             Bienvenido a Turismo Araucanía            *");
-            System.out.println("*                            /                           *");
-            System.out.println("*              Welcome to Turismo Araucanía              *");
-            System.out.println("**********************************************************");
-            System.out.println("Por favor, seleccione una de las opcíones/Please select one of the options");
-            System.out.println("[1] ver lugares turísticos/see tourist places");
-            System.out.println("[2] ver árboles nativos/see native trees");
-            System.out.println("[3] ver animales nativos/see native animals");
-            System.out.println("[4] Salir del Programa/Exit the program");
+
+            System.out.println("bienvenido");
+            System.out.println("Que desea hacer");
+            System.out.println("[1] Detalle desastre");
+            System.out.println("[2] Ver lista de desaparecidos");
+            System.out.println("[3] Actualizar lista de desaparecidos");
+            System.out.println("[4] Salir");
         }
         public static String ingresarRespuesta() {
             Scanner teclado = new Scanner(System.in);
@@ -34,7 +29,7 @@ public class menu {
             switch (ingresoDatos) {
                 case "1" -> {
                     do {
-                        System.out.println("Lista de lugares turísticos/ List of tourist places ");
+                        System.out.println(" ");
 
                         textoSalida();
                         a=salir();
@@ -42,7 +37,7 @@ public class menu {
                 }
                 case "2" -> {
                     do {
-                        System.out.println("Lista de árboles nativos/List of native trees");
+                        System.out.println("");
 
                         textoSalida();
                         a=salir();
@@ -50,7 +45,7 @@ public class menu {
                     break;
                 }
                 case "3" -> {
-                    System.out.println("Lista de los animales nativos de la zona/ List of native animals in the area");
+                    System.out.println("");
                     a = true;
 
                     break;
@@ -100,4 +95,4 @@ public class menu {
     }
 
 
-}
+
